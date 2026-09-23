@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jake Lawrence | Executive Career Profile & Portfolio</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              200: '#b9ddfd',
+              300: '#7cc2fb',
+              400: '#36a2f7',
+              500: '#0c87eb',
+              600: '#0269ca',
+              700: '#0354a3',
+              800: '#074786',
+              900: '#0b3c6f',
+              950: '#07264a',
+            },
+            slate: {
+              850: '#152033',
+              900: '#0f172a',
+              950: '#090d16'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom subtle glassmorphism and animations */
+    .glass-nav {
+      background: rgba(15, 23, 42, 0.82);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .hero-glow {
+      background: radial-gradient(circle at 50% 30%, rgba(14, 165, 233, 0.15) 0%, rgba(15, 23, 42, 0) 70%);
+    }
+    .badge-glow {
+      box-shadow: 0 0 15px -3px rgba(56, 189, 248, 0.3);
+    }
+    
+    /* Print optimization for executive PDF output */
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #0f172a !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .print-only {
+        display: block !important;
+      }
+      .print-card {
+        border: 1px solid #e2e8f0 !important;
+        box-shadow: none !important;
+        break-inside: avoid;
+        background: #ffffff !important;
+        color: #0f172a !important;
+      }
+      .text-slate-100, .text-slate-200, .text-slate-300, .text-white {
+        color: #1e293b !important;
+      }
+      .text-slate-400 {
+        color: #475569 !important;
+      }
+      .border-slate-800, .border-slate-700 {
+        border-color: #e2e8f0 !important;
+      }
+      .bg-slate-900, .bg-slate-950, .bg-slate-850 {
+        background: #ffffff !important;
+      }
+      header, section {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-3 bg-slate-800/95 border border-brand-500/40 text-white px-5 py-3.5 rounded-xl shadow-2xl backdrop-blur-md">
+    <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-400"></i>
+    <span id="toast-message" class="text-sm font-medium">Copied to clipboard</span>
+  </div>
+
+  <nav class="fixed top-0 left-0 right-0 z-40 glass-nav border-b border-slate-800/80 transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-18 py-3">
+        
+        <!-- Logo / Brand Signature -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-600 via-brand-500 to-cyan-400 flex items-center justify-center font-display font-extrabold text-white text-lg tracking-wider shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
+            JL
+          </div>
+          <div>
+            <div class="font-display font-bold text-base sm:text-lg tracking-tight text-white group-hover:text-brand-400 transition-colors">Jake Lawrence</div>
+            <div class="text-[11px] font-medium tracking-wide uppercase text-slate-400">Chief Engineer & Operations</div>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden md:flex items-center gap-1.5 lg:gap-2">
+          <a href="#about" class="px-3 py-1.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors">About</a>
+          <a href="#highlights" class="px-3 py-1.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors">Impact</a>
+          <a href="#experience" class="px-3 py-1.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors">Experience</a>
+          <a href="#skills" class="px-3 py-1.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors">Skills</a>
+          <a href="#education" class="px-3 py-1.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors">Credentials</a>
+          <a href="#contact" class="px-3 py-1.5 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors">Contact</a>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <button onclick="window.print()" class="no-print hidden sm:inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700/80 transition-all hover:border-slate-600">
+            <i data-lucide="printer" class="w-3.5 h-3.5"></i>
+            <span>Print / PDF</span>
+          </button>
+
+          <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-brand-600 hover:bg-brand-500 text-white shadow-md shadow-brand-600/30 transition-all hover:shadow-brand-500/50">
+            <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+            <span>Get In Touch</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button id="mobile-menu-toggle" aria-label="Toggle Navigation" class="md:hidden p-2 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none">
+            <i data-lucide="menu" id="menu-icon" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-800/80 bg-slate-900/95 backdrop-blur-xl px-4 py-4 space-y-2">
+      <a href="#about" class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:bg-slate-800 hover:text-white">About</a>
+      <a href="#highlights" class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:bg-slate-800 hover:text-white">Key Impact</a>
+      <a href="#experience" class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:bg-slate-800 hover:text-white">Work Experience</a>
+      <a href="#skills" class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:bg-slate-800 hover:text-white">Core Skills</a>
+      <a href="#education" class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:bg-slate-800 hover:text-white">Education & Honors</a>
+      <a href="#contact" class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:bg-slate-800 hover:text-white">Direct Contact</a>
+      <button onclick="window.print()" class="w-full flex items-center justify-center gap-2 mt-2 px-3 py-2 rounded-lg text-sm font-medium bg-slate-800 text-slate-200 border border-slate-700">
+        <i data-lucide="printer" class="w-4 h-4"></i>
+        <span>Print Executive Profile</span>
+      </button>
+    </div>
+  </nav>
+
+  <header id="about" class="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden hero-glow">
+    <!-- Subtle background accent grids -->
+    <div class="absolute inset-0 opacity-15 pointer-events-none bg-[radial-gradient(#38bdf8_1px,transparent_1px)] [background-size:24px_24px]"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left: Executive Profile Content -->
+        <div class="lg:col-span-8 space-y-6 text-left">
+          
+          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-brand-950/80 border border-brand-500/30 text-brand-300 text-xs sm:text-sm font-medium">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>Available for Senior Facilities, Engineering & Operations Leadership</span>
+          </div>
+
+          <div class="space-y-2">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold font-display tracking-tight text-white leading-tight">
+              Jake Lawrence
+            </h1>
+            <p class="text-xl sm:text-2xl font-display font-semibold text-transparent bg-clip-text bg-gradient-to-r from-brand-300 via-cyan-300 to-sky-400 italic">
+              "Supra Et Ultra" &mdash; Excellence is a mindset.
+            </p>
+          </div>
+
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl">
+            Results-oriented problem solver and former Business Owner with comprehensive cross-functional leadership spanning commercial facilities engineering, large-scale hospitality, convention center procurement, and multi-unit retail operations. Expert in directing complex commercial HVAC/plant machinery, managing multi-phase CapEx budgets, and engineering operational efficiency with uncompromising ethical standards.
+          </p>
+
+          <!-- Contact Badges / Quick Details with Copy Actions -->
+          <div class="flex flex-wrap gap-2.5 sm:gap-3 text-xs sm:text-sm pt-2">
+            <button onclick="copyToClipboard('jacob.a.lawrence@gmail.com', 'Email address')" class="group flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-300 hover:text-white hover:border-brand-500/60 hover:bg-slate-850 transition-all">
+              <i data-lucide="mail" class="w-4 h-4 text-brand-400 group-hover:scale-110 transition-transform"></i>
+              <span>jacob.a.lawrence@gmail.com</span>
+              <i data-lucide="copy" class="w-3.5 h-3.5 text-slate-500 group-hover:text-brand-300"></i>
+            </button>
+
+            <button onclick="copyToClipboard('903-441-7270', 'Phone number')" class="group flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-300 hover:text-white hover:border-brand-500/60 hover:bg-slate-850 transition-all">
+              <i data-lucide="phone" class="w-4 h-4 text-brand-400 group-hover:scale-110 transition-transform"></i>
+              <span>903-441-7270</span>
+              <i data-lucide="copy" class="w-3.5 h-3.5 text-slate-500 group-hover:text-brand-300"></i>
+            </button>
+
+            <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-300">
+              <i data-lucide="map-pin" class="w-4 h-4 text-brand-400"></i>
+              <span>Branson, MO</span>
+            </div>
+
+            <div class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-amber-950/30 border border-amber-600/30 text-amber-300 font-medium">
+              <i data-lucide="shield-check" class="w-4 h-4 text-amber-400"></i>
+              <span>Clearance: Secret (Prior/Expired)</span>
+            </div>
+          </div>
+
+          <!-- Hero Action CTAs -->
+          <div class="flex flex-wrap items-center gap-3.5 pt-4">
+            <a href="#experience" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm bg-brand-600 hover:bg-brand-500 text-white shadow-lg shadow-brand-600/30 hover:shadow-brand-500/50 transition-all transform hover:-translate-y-0.5">
+              <span>Explore Career History</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+
+            <a href="mailto:jacob.a.lawrence@gmail.com" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm bg-slate-800/90 hover:bg-slate-750 text-slate-200 border border-slate-700/80 hover:border-slate-600 transition-all">
+              <i data-lucide="send" class="w-4 h-4 text-brand-400"></i>
+              <span>Direct Email</span>
+            </a>
+
+            <button onclick="window.print()" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-semibold text-sm bg-transparent hover:bg-slate-800/60 text-slate-300 border border-slate-800 transition-all">
+              <i data-lucide="file-text" class="w-4 h-4 text-slate-400"></i>
+              <span>Executive Brief</span>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Right: Executive Card & Distinctions Snapshot -->
+        <div class="lg:col-span-4">
+          <div class="relative group rounded-2xl bg-gradient-to-b from-slate-800/80 via-slate-900 to-slate-950 p-6 border border-slate-800 shadow-2xl backdrop-blur-sm">
+            
+            <div class="flex items-center justify-between pb-5 border-b border-slate-800">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-brand-400 font-bold">
+                  <i data-lucide="award" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <div class="text-xs uppercase font-semibold tracking-wider text-slate-400">Professional Pillars</div>
+                  <div class="text-base font-bold text-white">Dual Degree Alumnus</div>
+                </div>
+              </div>
+              <span class="px-2.5 py-1 text-[11px] font-bold rounded-md bg-brand-950 text-brand-400 border border-brand-800/60">3.9 / 3.8 GPA</span>
+            </div>
+
+            <div class="py-5 space-y-4 text-sm">
+              <div class="flex items-start gap-3">
+                <i data-lucide="cpu" class="w-5 h-5 text-cyan-400 mt-0.5 shrink-0"></i>
+                <div>
+                  <div class="font-semibold text-slate-200">Commercial Engineering</div>
+                  <div class="text-xs text-slate-400">Large-scale HVAC, central plant, 277V/480V high voltage diagnostics & plumbing.</div>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <i data-lucide="bar-chart-3" class="w-5 h-5 text-brand-400 mt-0.5 shrink-0"></i>
+                <div>
+                  <div class="font-semibold text-slate-200">Capital Project Management</div>
+                  <div class="text-xs text-slate-400">Directed $500K+ CapEx upgrades on time and strictly within budget caps.</div>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <i data-lucide="shield" class="w-5 h-5 text-emerald-400 mt-0.5 shrink-0"></i>
+                <div>
+                  <div class="font-semibold text-slate-200">Military Veteran Service</div>
+                  <div class="text-xs text-slate-400">U.S. Army Signal Technician & Specialist. Recipient of Meritorious Service Medal.</div>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <i data-lucide="heart-handshake" class="w-5 h-5 text-indigo-400 mt-0.5 shrink-0"></i>
+                <div>
+                  <div class="font-semibold text-slate-200">Executive Procurement & MSAs</div>
+                  <div class="text-xs text-slate-400">10% vendor cost reduction and 100% continuous audit compliance at ASM Global.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+              <span>Personal Focus:</span>
+              <span class="font-medium text-slate-300">Graphic Design &bull; Sports &bull; Real Estate</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <section id="highlights" class="py-10 bg-slate-900/60 border-y border-slate-800/80 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="p-4 rounded-xl bg-slate-900 border border-slate-800/90 hover:border-brand-500/40 transition-all">
+          <div class="text-2xl sm:text-3xl font-extrabold font-display text-white tracking-tight flex items-baseline gap-1">
+            <span>$500K+</span>
+          </div>
+          <div class="text-xs font-semibold uppercase tracking-wider text-brand-400 mt-1">CapEx Budgets Managed</div>
+          <div class="text-xs text-slate-400 mt-1">Multi-phase hospitality upgrades delivered within financial parameters.</div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-slate-900 border border-slate-800/90 hover:border-brand-500/40 transition-all">
+          <div class="text-2xl sm:text-3xl font-extrabold font-display text-emerald-400 tracking-tight flex items-baseline gap-1">
+            <span>100%</span>
+          </div>
+          <div class="text-xs font-semibold uppercase tracking-wider text-emerald-400 mt-1">Audit Compliance</div>
+          <div class="text-xs text-slate-400 mt-1">Impeccable procurement and financial reconciliation at Branson Convention Center.</div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-slate-900 border border-slate-800/90 hover:border-brand-500/40 transition-all">
+          <div class="text-2xl sm:text-3xl font-extrabold font-display text-cyan-400 tracking-tight flex items-baseline gap-1">
+            <span>#1</span>
+            <span class="text-xs text-slate-400 font-normal uppercase">Nationwide</span>
+          </div>
+          <div class="text-xs font-semibold uppercase tracking-wider text-cyan-400 mt-1">36-Week Top Rank</div>
+          <div class="text-xs text-slate-400 mt-1">Led highest-performing department out of 1,600+ national retail stores.</div>
+        </div>
+
+        <div class="p-4 rounded-xl bg-slate-900 border border-slate-800/90 hover:border-brand-500/40 transition-all">
+          <div class="text-2xl sm:text-3xl font-extrabold font-display text-amber-400 tracking-tight flex items-baseline gap-1">
+            <span>20+</span>
+            <span class="text-xs text-slate-400 font-normal">Years</span>
+          </div>
+          <div class="text-xs font-semibold uppercase tracking-wider text-amber-400 mt-1">Leadership Track Record</div>
+          <div class="text-xs text-slate-400 mt-1">Military electronics, commercial engineering, retail & business ownership.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="py-20 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-400 mb-2">
+            <i data-lucide="briefcase" class="w-4 h-4"></i>
+            <span>Professional Career Journey</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-white tracking-tight">
+            Work Experience & Proven Impact
+          </h2>
+        </div>
+
+        <!-- Filter Tags -->
+        <div class="flex flex-wrap gap-2 text-xs" id="experience-filters">
+          <button onclick="filterExperience('all', this)" class="filter-btn active px-3.5 py-1.5 rounded-lg font-semibold bg-brand-600 text-white transition-all">
+            All Roles
+          </button>
+          <button onclick="filterExperience('engineering', this)" class="filter-btn px-3.5 py-1.5 rounded-lg font-semibold bg-slate-850 text-slate-300 hover:text-white border border-slate-800 hover:border-slate-700 transition-all">
+            Engineering & Facilities
+          </button>
+          <button onclick="filterExperience('leadership', this)" class="filter-btn px-3.5 py-1.5 rounded-lg font-semibold bg-slate-850 text-slate-300 hover:text-white border border-slate-800 hover:border-slate-700 transition-all">
+            Operations & Procurement
+          </button>
+          <button onclick="filterExperience('military', this)" class="filter-btn px-3.5 py-1.5 rounded-lg font-semibold bg-slate-850 text-slate-300 hover:text-white border border-slate-800 hover:border-slate-700 transition-all">
+            Military Service
+          </button>
+        </div>
+      </div>
+
+      <!-- Experience Cards Container -->
+      <div class="space-y-8" id="experience-list">
+
+        <!-- 1. Urbana Hospitality / Branson Hillside Hotel -->
+        <div class="exp-card print-card rounded-2xl bg-slate-900 border border-slate-800 p-6 sm:p-8 hover:border-brand-500/40 transition-all" data-category="engineering">
+          <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 pb-5 border-b border-slate-800/80">
+            <div>
+              <div class="flex items-center gap-3 flex-wrap">
+                <h3 class="text-xl sm:text-2xl font-bold font-display text-white">Chief Engineer</h3>
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-brand-950 text-brand-300 border border-brand-800">Hospitality & Facilities</span>
+              </div>
+              <div class="text-base text-brand-400 font-medium mt-1">Urbana Hospitality &bull; Branson Hillside Hotel</div>
+            </div>
+            <div class="flex items-center gap-2 text-xs font-semibold text-slate-300 bg-slate-800/80 px-3.5 py-1.5 rounded-lg border border-slate-700 shrink-0">
+              <i data-lucide="calendar" class="w-3.5 h-3.5 text-brand-400"></i>
+              <span>2024 &ndash; 2026</span>
+            </div>
+          </div>
+
+          <div class="mt-5 grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <div class="lg:col-span-8 space-y-3 text-slate-300 text-sm leading-relaxed">
+              <p class="flex items-start gap-2.5">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-brand-400 mt-1 shrink-0"></i>
+                <span>Direct and mentor a dedicated team of maintenance technicians; orchestrating work orders, preventative maintenance scheduling, and performance evaluations to maximize property efficiency and guest satisfaction.</span>
+              </p>
+              <p class="flex items-start gap-2.5">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-brand-400 mt-1 shrink-0"></i>
+                <span>Spearheaded internal recruitment, onboarding, and comprehensive technical training pipelines for HVAC and plant mechanics, directly eliminating high-cost dependence on third-party contractors.</span>
+              </p>
+              <p class="flex items-start gap-2.5">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-brand-400 mt-1 shrink-0"></i>
+                <span>Direct concurrent, multi-phase CapEx infrastructure initiatives from engineering conception to commissioning, managing total budgets of <strong class="text-white font-semibold">$500,000+</strong> strictly within schedule and allocation limits.</span>
+              </p>
+              <p class="flex items-start gap-2.5">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-brand-400 mt-1 shrink-0"></i>
+                <span>Hands-on oversight and precision troubleshooting across commercial 277V/480V three-phase electrical gear, commercial chillers, boilers, guestroom systems, and complex plumbing networks.</span>
+              </p>
+            </div>
+
+            <div class="lg:col-span-4 bg-slate-950/60 p-4 rounded-xl border border-slate-850 flex flex-col justify-center space-y-2.5">
+              <div class="text-xs uppercase tracking-wider font-semibold text-slate-400">Core Competencies In Role</div>
+              <div class="flex flex-wrap gap-1.5 text-[11px]">
+                <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">Commercial HVAC</span>
+                <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">277V/480V Systems</span>
+                <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">$500K+ CapEx</span>
+                <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">Team Mentorship</span>
+                <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">Preventative Maintenance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Independent Real Estate Professional | Business Owner -->
+        <div class="exp-card print-card rounded-2xl bg-slate-900 border border-slate-800 p-6 sm:p-8 hover:border-brand-500/40 transition-all" data-category="leadership">
+          <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 pb-5 border-b border-slate-800/80">
+            <div>
+              <div class="flex items-center gap-3 flex-wrap">
+                <h3 class="text-xl sm:text-2xl font-bold font-display text-white">Independent Real Estate Professional &bull; Business Owner</h3>
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-950 text-emerald-300 border border-emerald-800">Business Ownership</span>
+              </div>
+              <div class="text-base text-brand-400 font-medium mt-1">Self-Employed Practice &bull; Branson, MO</div>
+            </div>
+            <div class="flex items-center gap-2 text-xs font-semibold text-slate-300 bg-slate-800/80 px-3.5 py-1.5 rounded-lg border border-slate-700 shrink-0">
+              <i data-lucide="calendar" class="w-3.5 h-3.5 text-brand-400"></i>
+              <span>2020 &ndash; 2024</span>
+            </div>
+          </div>
+
+          <div class="mt-5 grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <div class="lg:col-span-8 space-y-3 text-slate-300 text-sm leading-relaxed">
+              <p class="flex items-start gap-2.5">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-brand-400 mt-1 shrink-0"></i>
+                <span>Managed all operational, financial, and marketing facets of an independent enterprise, analyzing market trends, local ordinances, and valuations to maximize client ROI.</span>
+              </p>
+              <p class="flex items-start gap-2.5">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-brand-400 mt-1 shrink-0"></i>
+                <span>Drafted, reviewed, and negotiated complex real estate contracts and multi-party purchase agreements with uncompromising legal compliance and client advocacy.</span>
+              </p>
+              <p class="flex items-start gap-2.5">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-brand-400 mt-1 shrink-0"></i>
+                <span>Controlled full procurement and vendor agreements for media assets, staging contractors, and legal services, optimizing overhead expenses to maintain elevated profit margins.</span>
+              </p>
+            </div>
+
+            <div class="lg:col-span-4 bg-slate-950/60 p-4 rounded-xl border border-slate-850 flex flex-col justify-center space-y-2.5">
+              <div class="text-xs uppercase tracking-wider font-semibold text-slate-400">Key Distinctions</div>
+              <div class="flex items-center gap-2 text-xs text-amber-300">
+                <i data-lucide="award" class="w-4 h-4 text-amber-400"></i>
+                <span>Honored as Rookie Realtor of the Year</span>
+              </div>
+              <div class="flex flex-wrap gap-1.5 text-[11px] pt-1">
+                <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">Contract Negotiation</span>
+                <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">P&L Management</span>
+                <span class="px-2 py-1 rounded bg-slate-800 text-slate-200">Vendor Relations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. ASM Global / Branson Convention Center (Purchasing Manager) -->
+        <div class="exp-card print-card rounded-2xl bg-slate-900 border border-slate-800 p-6 sm:p-8 hover:border-brand-500/40 transition-all" data-category="leadership">
+          <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 pb-5 border-b border-slate-800/80">
+            <div>
+              <div class="flex items-center gap-3 flex-wrap">
+                <h3 class="text-xl sm:text-2xl font-bold font-display text-white">Purchasing & Sustainability Manager</h3>
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-cyan-950 text-cyan-300 border border-cyan-800">Convention & Procurement</span>
+              </div>
+              <div class="text-base text-brand-400 font-medium mt-1">ASM GLOBAL &bull; Branson Convention Center</div>
+            </div>
+            <div class="flex items-center gap-2 text-xs font-semibold text-slate-300 bg-slate-800/80 px-3.5 py-1.5 rounded-lg border border-slate-700 shrink-0">
+              <i data-lucide="calendar" class="w-3.5 h-3.5 text-brand-400"></i>
+              <span>2015 &ndash; 2020</span>
+            </div>
+          </div>
+
+          <div class="mt-5 grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <div class="lg:col-span-8 space-y-3 text-slate-300 text-sm leading-relaxed">
+              <p class="flex items-start gap-2.5">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-brand-400 mt-1 shrink-0"></i>
+                <span>Renegotiated and structured Master Service Agreements (MSAs) across high-volume food, beverage, and facility suppliers, unlocking a verified <strong class="text-white font-semibold">10% annual procurement savings</strong>.</span>
+              </p>
+              <p class="flex items-start gap-2.5">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-brand-400 mt-1 shrink-0"></i>
+                <span>Spearheaded logistical and financial stewardship for the F&B Department, reducing monthly food costs to an average of <strong class="text-white font-semibold">15%</strong> while boosting facility waste diversion rate to an average of <strong class="text-white font-semibold">32%</strong>.</span>
+              </p>
+              <p class="flex items-start gap-2.5">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-brand-400 mt-1 shrink-0"></i>
+                <span>Enforced strict PO standardization, vendor consolidation, and monthly spending audits to preserve an unblemished <strong class="text-white font-semibold">100% corporate audit compliance</strong> track record.</span>
+              </p>
+            </div>
+
+            <div class="lg:col-span-4 bg-slate-950/60 p-4 rounded-xl border border-slate-850 flex flex-col justify-center space-y-2.5">
+              <div class="text-xs uppercase tracking-wider font-semibold text-slate-400">Key Measurable Outcomes</div>
+              <div class="space-y-1 text-xs text-slate-300">
+                <div class="flex justify-between py-1 border-b border-slate-850">
+                  <span>Procurement Cost Drop:</span>
+                  <span class="font-bold text-emerald-400">-10% Annual</span>
+                </div>
+                <div class="flex justify-between py-1 border-b border-slate-850">
+                  <span>Average Food Cost:</span>
+                  <span class="font-bold text-cyan-400">15% Monthly</span>
+                </div>
+                <div class="flex justify-between py-1">
+                  <span>Waste Diversion Rate:</span>
+                  <span class="font-bold text-brand-400">32% Average</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. ASM Global / Branson Convention Center (Events Administrator) -->
+        <div class="exp-card print-card rounded-2xl bg-slate-900 border border-slate-800 p-6 sm:p-8 hover:border-brand-500/40 transition-all" data-category="leadership">
+          <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 pb-5 border-b border-slate-800/80">
+            <div>
+              <div class="flex items-center gap-3 flex-wrap">
+                <h3 class="text-xl sm:text-2xl font-bold font-display text-white">Events Administrator</h3>
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-750">Executive Support</span>
+              </div>
+              <div class="text-base text-brand-400 font-medium mt-1">ASM GLOBAL &bull; Branson Convention Center</div>
+            </div>
+            <div class="flex items-center gap-2 text-xs font-semibold text-slate-300 bg-slate-800/80 px-3.5 py-1.5 rounded-lg border border-slate-700 shrink-0">
+              <i data-lucide="calendar" class="w-3.5 h-3.5 text-brand-400"></i>
+              <span>2013 &ndash; 2015</span>
+            </div>
+          </div>
+
+          <div class="mt-4 text-slate-300 text-sm leading-relaxed space-y-2">
+            <p>Streamlined administrative workflows across Events and Sales departments. Acted as confidential Administrative Assistant to the General Manager, facilitating executive inter-departmental communications, event logistics, and scheduling synchronization.</p>
+          </div>
+        </div>
+
+        <!-- 5. Aaron's Sales & Lease Ownership -->
+        <div class="exp-card print-card rounded-2xl bg-slate-900 border border-slate-800 p-6 sm:p-8 hover:border-brand-500/40 transition-all" data-category="leadership">
+          <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 pb-5 border-b border-slate-800/80">
+            <div>
+              <div class="flex items-center gap-3 flex-wrap">
+                <h3 class="text-xl sm:text-2xl font-bold font-display text-white">Retail Management & Customer Accounts Manager</h3>
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-brand-950 text-brand-300 border border-brand-800">Multi-Unit Retail</span>
+              </div>
+              <div class="text-base text-brand-400 font-medium mt-1">Aaron's Sales & Lease Ownership &bull; Greenville, TX</div>
+              <div class="text-xs text-slate-400 mt-0.5">Progression: Manager Trainee &rarr; Sales Manager &rarr; Customer Accounts / Assistant Manager</div>
+            </div>
+            <div class="flex items-center gap-2 text-xs font-semibold text-slate-300 bg-slate-800/80 px-3.5 py-1.5 rounded-lg border border-slate-700 shrink-0">
+              <i data-lucide="calendar" class="w-3.5 h-3.5 text-brand-400"></i>
+              <span>2008 &ndash; 2013</span>
+            </div>
+          </div>
+
+          <div class="mt-5 grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <div class="lg:col-span-8 space-y-3 text-slate-300 text-sm leading-relaxed">
+              <p class="flex items-start gap-2.5">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-brand-400 mt-1 shrink-0"></i>
+                <span>Maintained an unprecedented <strong class="text-white font-semibold">36-week streak as the #1 Accounts Department</strong> across the entire national franchise of 1,600+ stores.</span>
+              </p>
+              <p class="flex items-start gap-2.5">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-brand-400 mt-1 shrink-0"></i>
+                <span>Turned around store account retention, driving down non-renewals from <strong class="text-white font-semibold">67% to under 15%</strong> through structured skip-tracing and customer relationship management.</span>
+              </p>
+              <p class="flex items-start gap-2.5">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-brand-400 mt-1 shrink-0"></i>
+                <span>Promoted to Sales Manager, spearheading marketing strategies and sales flows that boosted active customer base by 100+ accounts and pushed customer satisfaction to regional highs.</span>
+              </p>
+            </div>
+
+            <div class="lg:col-span-4 bg-slate-950/60 p-4 rounded-xl border border-slate-850 flex flex-col justify-center space-y-2">
+              <div class="text-xs uppercase tracking-wider font-semibold text-slate-400">Performance Snapshot</div>
+              <div class="text-sm font-bold text-emerald-400">#1 Store of 1,600+ Units</div>
+              <div class="text-xs text-slate-300">Non-renewals reduced by over 52 percentage points through strategic credit monitoring.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Lowe's Home Improvement -->
+        <div class="exp-card print-card rounded-2xl bg-slate-900 border border-slate-800 p-6 sm:p-8 hover:border-brand-500/40 transition-all" data-category="leadership">
+          <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 pb-5 border-b border-slate-800/80">
+            <div>
+              <div class="flex items-center gap-3 flex-wrap">
+                <h3 class="text-xl sm:text-2xl font-bold font-display text-white">Department Manager</h3>
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-750">Store Operations</span>
+              </div>
+              <div class="text-base text-brand-400 font-medium mt-1">Lowe's Home Improvement &bull; Greenville, TX</div>
+            </div>
+            <div class="flex items-center gap-2 text-xs font-semibold text-slate-300 bg-slate-800/80 px-3.5 py-1.5 rounded-lg border border-slate-700 shrink-0">
+              <i data-lucide="calendar" class="w-3.5 h-3.5 text-brand-400"></i>
+              <span>2006 &ndash; 2008</span>
+            </div>
+          </div>
+
+          <div class="mt-4 text-slate-300 text-sm leading-relaxed space-y-2">
+            <p>Managed 5 full departments encompassing sales quotas, inventory control, ordering cycles, associate scheduling, and budgeting. Created and institutionalized an Inventory Preparation Program subsequently adopted across the entire <strong>Texas / Oklahoma Region</strong>, recovering $26,000 in inventory to bring the region into the black and earning the Employee of the Month honors.</p>
+          </div>
+        </div>
+
+        <!-- 7. US ARMY -->
+        <div class="exp-card print-card rounded-2xl bg-slate-900 border border-slate-800 p-6 sm:p-8 hover:border-brand-500/40 transition-all" data-category="military">
+          <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 pb-5 border-b border-slate-800/80">
+            <div>
+              <div class="flex items-center gap-3 flex-wrap">
+                <h3 class="text-xl sm:text-2xl font-bold font-display text-white">Communications & Electronics Specialist / Signal Technician (31U)</h3>
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-amber-950 text-amber-300 border border-amber-800">Military Service</span>
+              </div>
+              <div class="text-base text-brand-400 font-medium mt-1">United States Army &bull; Fort Gordon, GA & Tactical Deployments</div>
+            </div>
+            <div class="flex items-center gap-2 text-xs font-semibold text-slate-300 bg-slate-800/80 px-3.5 py-1.5 rounded-lg border border-slate-700 shrink-0">
+              <i data-lucide="calendar" class="w-3.5 h-3.5 text-brand-400"></i>
+              <span>1999 &ndash; 2006</span>
+            </div>
+          </div>
+
+          <div class="mt-5 grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <div class="lg:col-span-8 space-y-3 text-slate-300 text-sm leading-relaxed">
+              <p class="flex items-start gap-2.5">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-brand-400 mt-1 shrink-0"></i>
+                <span>Managed preventive and corrective maintenance directives for high-priority electronic signal systems, secured tactical communications hardware, and command networks, ensuring <strong class="text-white font-semibold">100% operational readiness</strong>.</span>
+              </p>
+              <p class="flex items-start gap-2.5">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-brand-400 mt-1 shrink-0"></i>
+                <span>Diagnosed and serviced complex low-voltage electrical circuitry down to the component level under high-stress tactical conditions.</span>
+              </p>
+              <p class="flex items-start gap-2.5">
+                <i data-lucide="chevron-right" class="w-4 h-4 text-brand-400 mt-1 shrink-0"></i>
+                <span>Maintained mobile power generation units and auxiliary power plants, performing routine electrical load testing, governor calibrations, and preventative mechanical servicing.</span>
+              </p>
+            </div>
+
+            <div class="lg:col-span-4 bg-slate-950/60 p-4 rounded-xl border border-slate-850 flex flex-col justify-center space-y-2">
+              <div class="text-xs uppercase tracking-wider font-semibold text-slate-400">Military Honors</div>
+              <div class="text-xs font-semibold text-amber-300 flex items-center gap-2">
+                <i data-lucide="medal" class="w-4 h-4 text-amber-400 shrink-0"></i>
+                <span>Army Meritorious Service Medal</span>
+              </div>
+              <div class="text-xs font-semibold text-amber-300 flex items-center gap-2">
+                <i data-lucide="star" class="w-4 h-4 text-amber-400 shrink-0"></i>
+                <span>Soldier of the Year Award</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="py-20 bg-slate-900/50 border-t border-slate-800 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-400">
+          <i data-lucide="sliders" class="w-4 h-4"></i>
+          <span>Capabilities Matrix</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-white tracking-tight">
+          Executive Competencies & Technical Skills
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base">
+          A rare combination of rigorous hands-on mechanical & electrical troubleshooting capability paired with executive business administration, procurement, and staff mentorship.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Pillar 1: Facilities & Technical -->
+        <div class="rounded-2xl bg-slate-900 border border-slate-800 p-6 flex flex-col justify-between hover:border-brand-500/40 transition-all group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-brand-950 border border-brand-800/60 flex items-center justify-center text-brand-400 mb-5 group-hover:scale-110 transition-transform">
+              <i data-lucide="wrench" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold font-display text-white mb-2">Technical & Facilities</h3>
+            <p class="text-xs text-slate-400 mb-4">Hands-on diagnostic precision across commercial infrastructure.</p>
+            
+            <ul class="space-y-2 text-xs text-slate-300">
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>
+                <span>Commercial HVAC & Chillers</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>
+                <span>277V / 480V Electrical Systems</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>
+                <span>Commercial Plumbing & Boilers</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>
+                <span>Plant & Kitchen Equipment</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>
+                <span>Mobile Power Generation</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>
+                <span>Low-Voltage Signal Circuitry</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800/80 text-[11px] text-slate-400 font-medium">
+            Field Tested &bull; High-Voltage Certified
+          </div>
+        </div>
+
+        <!-- Pillar 2: Project Management & CapEx -->
+        <div class="rounded-2xl bg-slate-900 border border-slate-800 p-6 flex flex-col justify-between hover:border-brand-500/40 transition-all group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-cyan-950 border border-cyan-800/60 flex items-center justify-center text-cyan-400 mb-5 group-hover:scale-110 transition-transform">
+              <i data-lucide="layers" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold font-display text-white mb-2">Project & Operations</h3>
+            <p class="text-xs text-slate-400 mb-4">Orchestrating multi-million dollar asset workflows smoothly.</p>
+            
+            <ul class="space-y-2 text-xs text-slate-300">
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                <span>CapEx Project Management ($500K+)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                <span>Work Order Prioritization</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                <span>Master Service Agreements (MSAs)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                <span>Facility Sustainability & Waste</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                <span>Scheduling & Workforce Allocation</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                <span>Contractor & Vendor Oversight</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800/80 text-[11px] text-slate-400 font-medium">
+            On-Time & On-Budget Delivery
+          </div>
+        </div>
+
+        <!-- Pillar 3: Financial & Leadership -->
+        <div class="rounded-2xl bg-slate-900 border border-slate-800 p-6 flex flex-col justify-between hover:border-brand-500/40 transition-all group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-950 border border-emerald-800/60 flex items-center justify-center text-emerald-400 mb-5 group-hover:scale-110 transition-transform">
+              <i data-lucide="trending-up" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold font-display text-white mb-2">Business & Financial</h3>
+            <p class="text-xs text-slate-400 mb-4">Maximizing margins and preserving operational compliance.</p>
+            
+            <ul class="space-y-2 text-xs text-slate-300">
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>100% Audit Reconciliation</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>Strategic Purchasing & Sourcing</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>Regional Inventory Preparation</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>Contract Drafting & Negotiation</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>Client Acquisition & Pipeline</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                <span>Departmental Budgeting</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800/80 text-[11px] text-slate-400 font-medium">
+            Measurable Cost Reductions
+          </div>
+        </div>
+
+        <!-- Pillar 4: Software, Systems & Design -->
+        <div class="rounded-2xl bg-slate-900 border border-slate-800 p-6 flex flex-col justify-between hover:border-brand-500/40 transition-all group">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-purple-950 border border-purple-800/60 flex items-center justify-center text-purple-400 mb-5 group-hover:scale-110 transition-transform">
+              <i data-lucide="laptop" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold font-display text-white mb-2">Systems & Creative</h3>
+            <p class="text-xs text-slate-400 mb-4">Enterprise applications and communication toolsets.</p>
+            
+            <ul class="space-y-2 text-xs text-slate-300">
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
+                <span>Microsoft Excel (Financial Models)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
+                <span>Microsoft Word & PowerPoint</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
+                <span>Graphic Design & Marketing Media</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
+                <span>Web Design & Content Workflows</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
+                <span>Inventory Control Software</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-purple-400"></span>
+                <span>Secret Clearance (Prior/Honor)</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800/80 text-[11px] text-slate-400 font-medium">
+            Executive Presentations & Media
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="py-20 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Left: Education (Degrees) -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="space-y-2">
+            <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-400">
+              <i data-lucide="graduation-cap" class="w-4 h-4"></i>
+              <span>Academic Foundation</span>
+            </div>
+            <h2 class="text-3xl font-bold font-display text-white tracking-tight">
+              Higher Education
+            </h2>
+          </div>
+
+          <div class="space-y-4">
+            <!-- Degree 1 -->
+            <div class="rounded-xl bg-slate-900 border border-slate-800 p-6 hover:border-brand-500/40 transition-all">
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <h3 class="text-lg font-bold text-white font-display">Mid-America Christian University</h3>
+                  <div class="text-brand-400 font-semibold text-sm mt-0.5">Bachelor of Science in Business Management & Ethics</div>
+                  <div class="text-xs text-slate-400 mt-2">Comprehensive curriculum focused on executive ethical governance, organizational theory, and strategic leadership.</div>
+                </div>
+                <div class="text-right shrink-0">
+                  <span class="inline-block px-2.5 py-1 text-xs font-bold rounded-lg bg-emerald-950 text-emerald-300 border border-emerald-800/80">3.9 GPA</span>
+                  <div class="text-xs text-slate-400 font-medium mt-1">2012 &ndash; 2014</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Degree 2 -->
+            <div class="rounded-xl bg-slate-900 border border-slate-800 p-6 hover:border-brand-500/40 transition-all">
+              <div class="flex items-start justify-between gap-4">
+                <div>
+                  <h3 class="text-lg font-bold text-white font-display">American InterContinental University</h3>
+                  <div class="text-brand-400 font-semibold text-sm mt-0.5">Bachelor of Arts in Business Administration</div>
+                  <div class="text-xs text-slate-400 mt-2">Concentrations in operational finance, market economics, personnel management, and enterprise administration.</div>
+                </div>
+                <div class="text-right shrink-0">
+                  <span class="inline-block px-2.5 py-1 text-xs font-bold rounded-lg bg-emerald-950 text-emerald-300 border border-emerald-800/80">3.8 GPA</span>
+                  <div class="text-xs text-slate-400 font-medium mt-1">2008 &ndash; 2010</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Honors & Military Distinctions -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="space-y-2">
+            <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-400">
+              <i data-lucide="award" class="w-4 h-4"></i>
+              <span>Accolades</span>
+            </div>
+            <h2 class="text-3xl font-bold font-display text-white tracking-tight">
+              Honors & Distinctions
+            </h2>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            
+            <div class="p-5 rounded-xl bg-slate-900 border border-slate-800 hover:border-amber-500/40 transition-all flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-amber-950/60 border border-amber-800/60 flex items-center justify-center text-amber-400 shrink-0">
+                <i data-lucide="medal" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="font-bold text-sm text-white">Army Meritorious Service Medal</div>
+                <div class="text-xs text-slate-400 mt-1">Awarded by the United States Army for exemplary meritorious service and technical dedication.</div>
+              </div>
+            </div>
+
+            <div class="p-5 rounded-xl bg-slate-900 border border-slate-800 hover:border-amber-500/40 transition-all flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-amber-950/60 border border-amber-800/60 flex items-center justify-center text-amber-400 shrink-0">
+                <i data-lucide="shield-check" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="font-bold text-sm text-white">Army Soldier of the Year</div>
+                <div class="text-xs text-slate-400 mt-1">Selected for unmatched signal technical aptitude, physical fitness, and tactical leadership.</div>
+              </div>
+            </div>
+
+            <div class="p-5 rounded-xl bg-slate-900 border border-slate-800 hover:border-brand-500/40 transition-all flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-brand-950/60 border border-brand-800/60 flex items-center justify-center text-brand-400 shrink-0">
+                <i data-lucide="sparkles" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="font-bold text-sm text-white">Rookie Realtor of the Year</div>
+                <div class="text-xs text-slate-400 mt-1">Recognized for premier inaugural production volume, customer trust, and closing proficiency.</div>
+              </div>
+            </div>
+
+            <div class="p-5 rounded-xl bg-slate-900 border border-slate-800 hover:border-brand-500/40 transition-all flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-cyan-950/60 border border-cyan-800/60 flex items-center justify-center text-cyan-400 shrink-0">
+                <i data-lucide="check-circle" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="font-bold text-sm text-white">MORA Outstanding Achievement</div>
+                <div class="text-xs text-slate-400 mt-1">Awarded for high-level contributions in sustainability, diversion, and resource optimization.</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 bg-slate-900/80 border-t border-slate-800 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="rounded-3xl bg-gradient-to-b from-slate-850 to-slate-950 border border-slate-800 p-8 sm:p-12 lg:p-16 shadow-2xl relative overflow-hidden">
+        
+        <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-brand-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10">
+          
+          <div class="lg:col-span-7 space-y-4 text-left">
+            <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-brand-400">
+              <i data-lucide="message-square" class="w-4 h-4"></i>
+              <span>Direct Inquiries</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold font-display text-white tracking-tight">
+              Ready to Discuss Executive Opportunities
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-xl">
+              Whether you are seeking a seasoned Chief Engineer, Facilities Director, or Operations Leader with proven P&L and CapEx leadership, let's connect.
+            </p>
+
+            <div class="pt-2 space-y-3">
+              <div class="flex items-center gap-3 text-sm text-slate-300">
+                <i data-lucide="map-pin" class="w-4 h-4 text-brand-400 shrink-0"></i>
+                <span>Based in Branson, MO &bull; Open to Regional & Strategic Relocation Opportunities</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm text-slate-300">
+                <i data-lucide="clock" class="w-4 h-4 text-brand-400 shrink-0"></i>
+                <span>Rapid response within 24 hours guaranteed</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 space-y-4">
+            
+            <!-- Email direct card -->
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center justify-between gap-4">
+              <div class="flex items-center gap-3 overflow-hidden">
+                <div class="w-10 h-10 rounded-lg bg-brand-950 text-brand-400 flex items-center justify-center shrink-0">
+                  <i data-lucide="mail" class="w-5 h-5"></i>
+                </div>
+                <div class="truncate">
+                  <div class="text-[11px] uppercase tracking-wider text-slate-400 font-semibold">Email Jake Directly</div>
+                  <a href="mailto:jacob.a.lawrence@gmail.com" class="text-sm font-bold text-white hover:text-brand-300 transition-colors truncate block">jacob.a.lawrence@gmail.com</a>
+                </div>
+              </div>
+              <button onclick="copyToClipboard('jacob.a.lawrence@gmail.com', 'Email address')" title="Copy Email" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors shrink-0">
+                <i data-lucide="copy" class="w-4 h-4"></i>
+              </button>
+            </div>
+
+            <!-- Phone direct card -->
+            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 flex items-center justify-between gap-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-emerald-950 text-emerald-400 flex items-center justify-center shrink-0">
+                  <i data-lucide="phone" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <div class="text-[11px] uppercase tracking-wider text-slate-400 font-semibold">Direct Phone Call</div>
+                  <a href="tel:9034417270" class="text-sm font-bold text-white hover:text-brand-300 transition-colors">903-441-7270</a>
+                </div>
+              </div>
+              <button onclick="copyToClipboard('903-441-7270', 'Phone number')" title="Copy Phone Number" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors shrink-0">
+                <i data-lucide="copy" class="w-4 h-4"></i>
+              </button>
+            </div>
+
+            <!-- Download / Print Action Button -->
+            <button onclick="window.print()" class="w-full flex items-center justify-center gap-2.5 py-3.5 px-4 rounded-xl bg-brand-600 hover:bg-brand-500 font-bold text-white shadow-lg shadow-brand-600/30 transition-all transform hover:-translate-y-0.5 text-sm">
+              <i data-lucide="printer" class="w-4 h-4"></i>
+              <span>Print / Save Clean PDF Profile</span>
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="py-10 bg-slate-950 border-t border-slate-850 text-slate-400 text-xs text-center">
+    <div class="max-w-7xl mx-auto px-4 space-y-2">
+      <div class="font-display font-bold text-slate-200 text-sm">
+        Jake Lawrence &bull; "Supra Et Ultra"
+      </div>
+      <p>Dual Degree Alumnus &bull; US Army Veteran &bull; Chief Engineer & Operations Leader</p>
+      <p class="text-slate-400 pt-2 text-[11px]">&copy; Jake Lawrence. Career Profile for prospective employer review.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Mobile Navigation Toggle
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (mobileMenuToggle && mobileMenu) {
+      mobileMenuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Close mobile menu on clicking any link
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    }
+
+    // Interactive Experience Filter
+    function filterExperience(category, btnElement) {
+      const cards = document.querySelectorAll('.exp-card');
+      const buttons = document.querySelectorAll('.filter-btn');
+
+      // Update button styling
+      buttons.forEach(b => {
+        b.classList.remove('bg-brand-600', 'text-white');
+        b.classList.add('bg-slate-850', 'text-slate-300');
+      });
+      btnElement.classList.remove('bg-slate-850', 'text-slate-300');
+      btnElement.classList.add('bg-brand-600', 'text-white');
+
+      // Filter cards
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Copy to clipboard helper using document.execCommand fallback for iframe compliance
+    function copyToClipboard(text, label) {
+      const tempInput = document.createElement('textarea');
+      tempInput.value = text;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      
+      try {
+        const successful = document.execCommand('copy');
+        if (successful) {
+          showToast(`${label} copied to clipboard!`);
+        } else {
+          showToast(`Direct copy: ${text}`);
+        }
+      } catch (err) {
+        showToast(`Information: ${text}`);
+      }
+      
+      document.body.removeChild(tempInput);
+    }
+
+    // Custom Toast Notification System (Never uses alert())
+    let toastTimeout;
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toast-message');
+      
+      if (!toast || !toastMsg) return;
+
+      toastMsg.textContent = message;
+      toast.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
